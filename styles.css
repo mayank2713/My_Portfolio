@@ -86,11 +86,12 @@ a{
     display:flex;
     justify-content: center;
     align-items: center;
-
+     
     gap: 5rem;
     margin: 4rem auto;
     padding: 0 1rem;
     padding-bottom: 8rem;
+    margin-botton:20px;
 }
 
 .faded-text{
