@@ -1649,6 +1649,10 @@ top: -1%;
       left:48%
   }
 }
+  .project-section{
+  margin-top: 20px;
+}
+
 
 .project-container{
   width: 100%;
@@ -2070,7 +2074,7 @@ footer{
   height: 70px;
   padding-top: 1rem;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   top: 0;
   position: sticky; /* Make the navbar sticky */
   z-index: 1000; /* Ensure the navbar stays on top of other elements */
