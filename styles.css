@@ -33,7 +33,7 @@
     display: flex;
     justify-content:space-between;
     align-items:center;
-    
+
     padding-top:1rem;
 }
 
@@ -1399,7 +1399,7 @@ footer{
 
 }
 
-@media (max-width: 590px) {
+@media (max-width:1000px) {
   /* CSS rules for mobile screens */
   @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
 
@@ -1423,7 +1423,7 @@ footer{
   
   .container{
       margin: 0 auto;
-      width: 576px;
+      width: 100%;
       height: 100%;
   
   }
@@ -1431,10 +1431,10 @@ footer{
   .faded-text{
     position:absolute;
     user-select:none;
-    font-size: 1em;
+    font-size: 2em;
     color:rgb(231,231,231);
 
-    bottom: 3.5%;
+    bottom: -14%;
     left: 8%;
     font-weight: bold;
     transition: all 3s;
@@ -1450,7 +1450,7 @@ footer{
 
   margin: 0 auto;
 
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 
   
 }
@@ -1461,7 +1461,7 @@ footer{
   flex-direction: column;
   width: 100%;
   margin-left: 0;
-  gap: 1rem;
+  gap: 0.5rem;
   right: -8%;
   width: 100%;
   order: 2;
@@ -1471,14 +1471,14 @@ footer{
 }
 
 .hero-section-heading{
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #343d68;
 }
 
 
 .hero-section-sub-heading{
-  font-size: 2.4rem;
+  font-size: 1.7rem;
   line-height: 2rem;
 }
 
@@ -1488,7 +1488,7 @@ font-weight: 800;
 }
 
 .hero-section-description{
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
   width: 90%;
   font-weight: 500;
 }
@@ -1498,9 +1498,9 @@ font-weight: 800;
   background-color: var(--bgOrange);
   width: fit-content;
   color: white;
-  padding: 0.5rem 2rem;
+  padding: 0.2rem 1.5rem;
   box-shadow: 5px 5px 7px 0px #0000003f;
-  font-size: 16px;
+  font-size: 13px;
   cursor: pointer;
   transition: all 0.5s;
   font-weight: 500;
@@ -1542,10 +1542,12 @@ font-weight: 800;
 
 .icons{
   position: absolute;
+  
 }
 
 .user-image{
-  padding:1.5em;
+  padding:1em;
+  margin-left: 25px;
   filter:grayscale(1);
   transition:all 1s;
   animation: scaleImage 5s linear infinite;
@@ -1558,26 +1560,26 @@ font-weight: 800;
 @keyframes scaleImage{
 
   0%{
-      transform: scale(1);
+      transform: scale(0.8);
       filter:grayscale(1);
 
   }
 
   50%{
-      transform: scale(1.1);
+      transform: scale(0.9);
       filter:grayscale(0);
       box-shadow: 3px 3px 10px black;
 
   }
   100%{
-      transform: scale(1);
+      transform: scale(0.8);
       filter:grayscale(1);
 
   }
 }
 
 .icon-dots{
-  right: 0;
+  right: 7%;
   bottom: 0.1rem;
   z-index: 13;
   animation: dotsAnimation 5s infinite;
@@ -1588,7 +1590,7 @@ font-weight: 800;
       transform:translateY(0px);
   }
   50%{
-      transform: translateY(-10px);
+      transform: translateY(-14px);
   }
   100%{
       transform: translateY(0px);
@@ -1598,8 +1600,8 @@ font-weight: 800;
 
 .icon-cube{
   z-index:9;
-  top:-0.8em;
-  right:0.1rem;
+  top:5%;
+  right:10%;
   animation: cubeRotate 3s infinite;
 
 }
@@ -1619,8 +1621,8 @@ font-weight: 800;
 
 .icon-circle{
   z-index:13;
-  left:-12px;
-  bottom:0;
+  left:10%;
+  bottom:5%;
   animation:shakeEffect 6s linear infinite;
 }
 
@@ -1628,23 +1630,12 @@ font-weight: 800;
  /*  */
   
 }
-
 .icon-zigzag{
-  z-index:9;
-  top:1.5em;
-  left:-0.3em;
-  animation:zigzagAnimation 5s ease-in infinite;
-}
-
-@keyframes zigzagAnimation{
-  50%{
-      left:5%;
-      top:2%;
-  }
+  margin-left: 40px;
 }
 .icon-plus{
   z-index:9;
-  top:-0.8rem;
+top: -1%;
   left: 50%;
   animation:shakeEffectPlus 5s ease-in infinite;
 }
@@ -1657,19 +1648,19 @@ font-weight: 800;
 }
 
 .project-container{
-  width: 580px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin-top: 1rem;
+  gap: 1rem;
+  margin-top: 0.5rem;
   
 
 }
 
 .project-card{
-  width: 70%;
+  width: 90%;
   height: 200px;
   background-image: url(./images/projects/Project1.png);
   background-size: cover;
@@ -1740,7 +1731,7 @@ a{
   bottom:10%;
   gap:0.2em;
   transition:all 0.4s;
-  width: 70%;
+  width: 90%;
   
   
   z-index:5;
@@ -1769,7 +1760,7 @@ a{
 }
 
 .project-skills-container{
-  width:70%;
+  width:80%;
   display: flex;
   flex-wrap: wrap;
   gap:2.5px;
@@ -1808,35 +1799,37 @@ a{
 }
 
 #project1{
-  margin-left: -45px;
+  margin-left: -1px;
   margin-bottom: 30px;
   background-image: url(./images/projects/Project1.png);
 }
 
 #project2{
-  margin-left:70px;
+  margin-left:0px;
   margin-bottom: 30px;
   background-image: url(./images/projects/Project2.png);
 }
 #project3{
-  margin-left: -45px;
+  margin-left: -1px;
   margin-bottom: 30px;
   background-image: url(./images/projects/Project3.png);
 }
 #project4{
-  margin-left:70px;
+  margin-left:0px;
+  margin-bottom: 30px;
  
   background-image: url(./images/projects/Project4.png);
 } 
 #project5{
+  margin-left: -1px;
   margin-bottom: 30px;
-  margin-left: -45px;
 
 
   background-image: url(./images/projects/Project5.png);
 } 
 #project6{
-  margin-left:70px;
+  margin-left:0px;
+  margin-bottom: 30px;
  
   background-image: url(./images/projects/Project6.png);
 } 
@@ -1857,11 +1850,11 @@ a{
 .skills-container{
   position:relative;
   display:flex;
-  width: 580px;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding:2.5rem;
+  padding:2rem;
   margin:0rem auto;
   
 }
@@ -1909,7 +1902,7 @@ animation: blobAnimate 3s linear infinite;
 } 
 
 .skills-logo{
-width:55px;
+width:50px;
 transition:all 0.5s;
 }
 
@@ -2011,7 +2004,9 @@ width: 100%;
 footer{
   background-color: #343d68;
   position: relative;
-  padding: 4rem;
+  padding: 2rem;
+  width: 100%;
+  height: 14%;
  
   
 }
@@ -2022,7 +2017,7 @@ footer{
   bottom:0;
   color:#535c87;
   user-select:none;
-  font-size:2rem;
+  font-size:1.7rem;
   font-weight: 600;
 }
 
@@ -2030,15 +2025,18 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 85px;
-  gap:1rem;
+  margin: 0 5px;
+  gap:2rem;
+
+  
 
 }
 
 .link-wrapper{
   display:flex;
   gap:1rem;
-  margin-right: 80px;
+  margin-left: 0px;
+
 }
 
 .link-wrapper div a{
@@ -2056,6 +2054,8 @@ footer{
 
   display:flex;
   gap:1rem;
+  
+  margin-left: 10px;
 }
 
 
@@ -2063,20 +2063,22 @@ footer{
 .navbar {
   display: flex;
   justify-content: space-between;
-  
-  height: 80px;
+  width: 100%;
+  height: 50px;
   padding-top: 1rem;
   margin: 0;
   margin-bottom: 50px;
-  position: sticky;
   top: 0;
-  z-index: 10000; /* Ensures the navbar stays on top of other content */
+  position: sticky; /* Make the navbar sticky */
+  z-index: 1000; /* Ensure the navbar stays on top of other elements */
+  background-color: white; /* Optional: maintain background color */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow to the navbar */
 }
 
 .logo{
-  width:65px;
+  width:45px;
   margin-left: -10px;
+  height: 80%;
   
 }
 
@@ -2085,11 +2087,14 @@ footer{
   display:flex;
   justify-content: baseline;
   align-items: center;
+
+  
+  
 }
 
 .logo-text{
   margin-left:-1.2rem;
-  font-size:28px;
+  font-size:20px;
 }
 
 .nav-items{
@@ -2125,18 +2130,17 @@ a{
   display: none;
   font-size: 2rem;
   cursor: pointer;
-  margin-right: 10px;
+  margin-left: 25px;
 }
 .nav-items {
   display: none;
   flex-direction: column;
   position: absolute;
   align-items: flex-start;
-   background-color: #f3f2f2;
-  top: 80px;
-  right: 8px;
-
-  padding: 10px;
+  top: 50px;
+  right: -2px;
+ background-color: #f3f2f2;
+  padding: 4px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -2151,3 +2155,4 @@ a{
 
  
 }
+
